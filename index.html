@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Happy Birthday & Netflix Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-black text-white">
+
+  <!-- Section 1: Birthday Message -->
+  <div class="relative">
+    <img alt="images/1.JPEG" class="w-full h-screen object-cover" src="images/1.jpeg"/>
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="absolute top-0 left-0 right-0 p-4 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <img alt="images/99.png" class="h-8" src="images/99.png"/>
+        <nav class="space-x-4">
+          <a class="text-white hover:underline" href="#">Homepage</a>
+          <a class="text-white hover:underline" href="#">Series</a>
+          <a class="text-white hover:underline" href="#">Movies</a>
+          <a class="text-white hover:underline" href="#">New and Popular</a>
+          <a class="text-white hover:underline" href="#">My List</a>
+        </nav>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 p-8">
+      <h1 class="text-5xl font-bold">Happy Birthday!</h1>
+      <p class="mt-4 text-lg">
+        i hope your smile today reflect how beautiful you are in my eyes every single day. I’m so grateful for your presence in my life, and I hope this little one, who has now turned 21, continues to grow and become even better in the future. May all that you strive for be achieved soon.
+        <p class="mt-4 text-lg">
+        I remember how we felt, sitting by the water,
+And every time I look at you, it’s like the first time.
+I fell in love with a careless man's careful daughter.
+She is the best thing
+"Taylor Swift-mine"
+      </p>
+      <p class="mt-4 text-lg">Click Play to see the details.</p>
+      <div class="mt-4 flex space-x-4">
+        <button id="playButton" class="bg-white text-black px-6 py-2 rounded flex items-center space-x-2">
+          <i class="fas fa-play"></i>
+          <span>Play</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden video element -->
+  <div id="videoContainer" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center hidden">
+            <video id="birthdayVideo" class="w-3/4 h-auto" controls>
+            <source src="100.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+        <button id="closeButton" class="absolute top-4 right-4 bg-white text-black px-4 py-2 rounded">Close</button>
+    </div>
+
+  </div>
+
+  <!-- Section 2: Netflix Clone -->
+  <header class="flex items-center justify-between p-4">
+    <div class="flex items-center space-x-4">
+      <img alt="images/99.png" class="h-8" src="images/99.png"/>
+      <nav class="space-x-4">
+        <a class="hover:underline" href="#">Homepage</a>
+        <a class="hover:underline" href="#">Series</a>
+        <a class="hover:underline" href="#">Movies</a>
+        <a class="hover:underline" href="#">New and Popular</a>
+        <a class="hover:underline" href="#">My List</a>
+      </nav>
+    </div>
+    <div class="flex items-center space-x-4">
+      <i class="fas fa-search"></i>
+      <span>ADULT</span>
+      <i class="fas fa-bell"></i>
+      <img alt="images/98.jpg" class="h-8 w-8 rounded-full" src="images/98.jpg"/>
+    </div>
+  </header>
+  <main class="p-4">
+    <section class="mb-8">
+      <h2 class="text-xl mb-4">You Without Me</h2>
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-chevron-left"></i>
+        <div class="flex space-x-2 overflow-x-auto">
+          <img alt="images/11.JPEG" class="h-48" src="images/11.JPEG"/>
+          <img alt="images/12.JPEG" class="h-48" src="images/12.JPEG"/>
+        <img alt="images/20.JPEG" class="h-48" src="images/20.JPEG"/>
+          <img alt="images/25.JPEG" class="h-48" src="images/25.JPEG"/>
+          <img alt="images/23.JPEG" class="h-48" src="images/23.JPEG"/>
+          <img alt="images/16.JPEG" class="h-48" src="images/16.JPEG"/>
+          <img alt="images/17.JPEG" class="h-48" src="images/17.JPEG"/>
+          <img alt="images/18.JPEG" class="h-48" src="images/18.JPEG"/>
+         
+         
+        </div>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </section>
+    <section>
+      <h2 class="text-xl mb-4">You After Meet Me</h2>
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-chevron-left"></i>
+        <img alt="images/31.JPEG" class="h-48" src="images/31.JPEG"/>
+          <img alt="images/32.JPEG" class="h-48" src="images/32.JPEG"/>
+        <img alt="images/33.JPEG" class="h-48" src="images/33.JPEG"/>
+          <img alt="images/35.JPEG" class="h-48" src="images/35.JPEG"/>
+          <img alt="images/36.JPEG" class="h-48" src="images/36.JPEG"/>
+          <img alt="images/37.JPEG" class="h-48" src="images/37.JPEG"/>
+          <img alt="images/39.JPEG" class="h-48" src="images/39.JPEG"/>
+          <img alt="images/38.JPEG" class="h-48" src="images/38.JPEG"/>
+       
+        <i class="fas fa-chevron-right"></i>
+    </div>
+    </section>
+
+    </section>
+    <section>
+      <h2 class="text-xl mb-4">Other Movie</h2>
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-chevron-left"></i>
+        <img alt="images/21.JPEG" class="h-48" src="images/21.JPEG"/>
+          <img alt="images/13.JPEG" class="h-48" src="images/13.JPEG"/>
+        <img alt="images/15.JPEG" class="h-48" src="images/15.JPEG"/>
+          <img alt="images/14.JPEG" class="h-48" src="images/14.JPEG"/>
+          <img alt="images/19.JPEG" class="h-48" src="images/19.JPEG"/>
+          <img alt="images/24.JPEG" class="h-48" src="images/24.JPEG"/>
+          <img alt="images/26.JPEG" class="h-48" src="images/26.JPEG"/>
+          <img alt="images/28.JPEG" class="h-48" src="images/28.JPEG"/>
+       
+        <i class="fas fa-chevron-right"></i>
+      
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("playButton").addEventListener("click", () => {
+      document.getElementById("videoContainer").classList.remove("hidden");
+      document.getElementById("birthdayVideo").play();
+    });
+
+    document.getElementById("closeButton").addEventListener("click", () => {
+      document.getElementById("birthdayVideo").pause();
+      document.getElementById("videoContainer").classList.add("hidden");
+    });
+  </script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-black text-white">
+    <footer class="py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h2 class="text-2xl font-bold">Happy Birthday Idoyy</h2>
+                    <p class="mt-2">semoga yang di inginkan bisa cepat tercapaii</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Contact Us</h3>
+                    <ul class="mt-2 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>helmiguntur426@gmail.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span>6285161694963</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Cikarang, Jawa Barat</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Since</h3>
+                    <ul class="mt-2 space-y-2">
+                        <li>18 Januari 2025</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Follow Us</h3>
+                    <div class="mt-2">
+                        <i class=""></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 text-center text-gray-500">
+                &copy; 2025 Company. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
